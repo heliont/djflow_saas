@@ -26,7 +26,8 @@
   "SECURITY": {
     "ALLOWED_HOSTS": [
       "localhost"
-    ]
+    ],
+    "SECURE_SSL_REDIRECT": false
   },
     "LOGGING": {
         "DEBUG_PATH": "/djflow_saas/djflow/log/debug.log",
