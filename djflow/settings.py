@@ -22,6 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = settings['SECRET_KEY']
 DEBUG = settings['DEBUG']
 ALLOWED_HOSTS = settings['SECURITY']['ALLOWED_HOSTS']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SECURE_SSL_REDIRECT = settings['SECURITY']['SECURE_SSL_REDIRECT']
 
 DATABASES = settings['DB']
